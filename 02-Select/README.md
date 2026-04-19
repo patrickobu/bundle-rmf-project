@@ -190,6 +190,10 @@ Security controls are the specific safeguards — policies, technical settings, 
 | SI-4(2) | **ADDED** — Automated threat detection (GuardDuty) | ML-based detection essential given HIGH ransomware risk in healthcare |
 | PT-2 | **ADDED** — PII processing controls | HIPAA requires explicit controls on PHI/PII collection and use |
 
+![Control families overview](11-control-families-overview.svg)
+
+![Control responsibility chart](12-control-responsibility-chart.svg)
+
 ---
 
 ## Inherited Controls from AWS
