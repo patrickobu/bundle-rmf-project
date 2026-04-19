@@ -77,6 +77,8 @@ Every control was tested using one or more of these NIST-defined methods:
 | 🟡 LOW Severity Findings | 2 |
 | ℹ️ Informational Observations | 3 (no POA&M required) |
 
+![Assessment results](07-assessment-results.svg)
+
 ---
 
 ## Security Assessment Findings
