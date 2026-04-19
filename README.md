@@ -42,6 +42,12 @@ Bundle is formally categorised as a **HIGH impact system** under FIPS 199, meani
 | Regulation | HIPAA Security Rule, HITECH Act |
 | ATO Status | **GRANTED** — BUNDLE-ATO-2025-001 (valid 2025–2028) |
 
+![Bundle system architecture](diagrams/01-bundle-system-architecture.svg)
+
+![RMF lifecycle overview](diagrams/02-rmf-lifecycle-overview.svg)
+
+![Network topology](diagrams/03-network-topology.svg)
+
 ---
 
 ## RMF Progress Tracker
