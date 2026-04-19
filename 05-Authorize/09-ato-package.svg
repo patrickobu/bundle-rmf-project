@@ -1,0 +1,55 @@
+<svg width="100%" viewBox="0 0 680 360" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Bundle authorization package components</title>
+<desc>Flow diagram showing SSP, SAR, and POA&amp;M feeding into the AO review which results in the ATO letter with five conditions</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<text x="340" y="26" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#1A4B8A">Authorization package — Step 5</text>
+<text x="340" y="44" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#555">Three core documents presented to the Authorizing Official for review</text>
+
+<!-- SSP -->
+<rect x="20" y="68" width="150" height="64" rx="10" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="95" y="92" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#0C447C">SSP</text>
+<text x="95" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5">System Security Plan</text>
+<text x="95" y="122" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5">From Steps 2-3</text>
+
+<!-- SAR -->
+<rect x="20" y="148" width="150" height="64" rx="10" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="95" y="172" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#633806">SAR</text>
+<text x="95" y="188" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#854F0B">Security Assessment Report</text>
+<text x="95" y="202" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#854F0B">From Step 4</text>
+
+<!-- POA&M -->
+<rect x="20" y="228" width="150" height="64" rx="10" fill="#FFEBEE" stroke="#CC0000" stroke-width="1"/>
+<text x="95" y="252" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#8A0000">POA&amp;M</text>
+<text x="95" y="268" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#CC0000">Plan of Action &amp; Milestones</text>
+<text x="95" y="282" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#CC0000">6 findings, owners, dates</text>
+
+<!-- Arrows to AO review -->
+<line x1="170" y1="100" x2="248" y2="168" stroke="#185FA5" stroke-width="1.2" marker-end="url(#arrow)"/>
+<line x1="170" y1="180" x2="248" y2="180" stroke="#854F0B" stroke-width="1.2" marker-end="url(#arrow)"/>
+<line x1="170" y1="260" x2="248" y2="192" stroke="#CC0000" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+<!-- AO Review box -->
+<rect x="250" y="130" width="160" height="100" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+<text x="330" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#085041">AO review</text>
+<text x="330" y="176" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#0F6E56">Linda Reyes, CIO</text>
+<text x="330" y="192" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#0F6E56">Evaluates residual risk</text>
+<text x="330" y="208" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#0F6E56">Accepts or rejects</text>
+
+<!-- Arrow to ATO -->
+<line x1="410" y1="180" x2="458" y2="180" stroke="#1A6B3C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- ATO box -->
+<rect x="460" y="130" width="200" height="100" rx="10" fill="#E8F5E9" stroke="#1A6B3C" stroke-width="2"/>
+<text x="560" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#1A6B3C">ATO granted</text>
+<text x="560" y="176" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#1A6B3C">BUNDLE-ATO-2025-001</text>
+<text x="560" y="192" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1A6B3C">Valid 3 years (2025-2028)</text>
+<text x="560" y="208" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1A6B3C">With 5 conditions</text>
+
+<!-- Conditions below ATO -->
+<text x="460" y="256" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#444441">Conditions:</text>
+<text x="460" y="272" font-family="Arial,sans-serif" font-size="10" fill="#555">1. IR training 100% within 30 days (HIGH priority)</text>
+<text x="460" y="288" font-family="Arial,sans-serif" font-size="10" fill="#555">2. All POA&amp;M items resolved by target dates</text>
+<text x="460" y="304" font-family="Arial,sans-serif" font-size="10" fill="#555">3. Continuous monitoring maintained</text>
+<text x="460" y="320" font-family="Arial,sans-serif" font-size="10" fill="#555">4. Changes reported within 5 business days</text>
+<text x="460" y="336" font-family="Arial,sans-serif" font-size="10" fill="#555">5. PHI breaches reported immediately</text>
+</svg>
