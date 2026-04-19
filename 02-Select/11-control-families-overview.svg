@@ -1,0 +1,96 @@
+<svg width="100%" viewBox="0 0 680 520" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>NIST 800-53 control families overview for Bundle EHMS</title>
+<desc>Grid showing all 20 NIST 800-53 control families colour coded by whether they are system-specific, hybrid, inherited from AWS, or organisation-level</desc>
+<text x="340" y="24" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#1A4B8A">NIST SP 800-53 Rev.5 — control families (Bundle EHMS)</text>
+<text x="340" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#555555">HIGH impact baseline — tailored for healthcare and AWS cloud environment</text>
+
+<!-- Legend -->
+<rect x="30" y="52" width="14" height="14" rx="3" fill="#185FA5"/>
+<text x="48" y="63" font-family="Arial,sans-serif" font-size="10" fill="#333">System-specific</text>
+<rect x="150" y="52" width="14" height="14" rx="3" fill="#1D9E75"/>
+<text x="168" y="63" font-family="Arial,sans-serif" font-size="10" fill="#333">Hybrid (Bundle + AWS)</text>
+<rect x="310" y="52" width="14" height="14" rx="3" fill="#888780"/>
+<text x="328" y="63" font-family="Arial,sans-serif" font-size="10" fill="#333">Inherited (AWS)</text>
+<rect x="430" y="52" width="14" height="14" rx="3" fill="#BA7517"/>
+<text x="448" y="63" font-family="Arial,sans-serif" font-size="10" fill="#333">Org-level</text>
+
+<!-- Row 1 -->
+<rect x="30" y="76" width="148" height="64" rx="8" fill="#185FA5" stroke="none"/>
+<text x="104" y="100" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">AC</text>
+<text x="104" y="116" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">Access Control</text>
+<text x="104" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">20 controls</text><rect x="188" y="76" width="148" height="64" rx="8" fill="#185FA5" stroke="none"/>
+<text x="262" y="100" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">AT</text>
+<text x="262" y="116" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">Awareness &amp; Training</text>
+<text x="262" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">4 controls</text><rect x="346" y="76" width="148" height="64" rx="8" fill="#1D9E75" stroke="none"/>
+<text x="420" y="100" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">AU</text>
+<text x="420" y="116" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">Audit &amp; Accountability</text>
+<text x="420" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">12 controls</text><rect x="504" y="76" width="148" height="64" rx="8" fill="#185FA5" stroke="none"/>
+<text x="578" y="100" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">CA</text>
+<text x="578" y="116" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">Assessment &amp; Auth</text>
+<text x="578" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">7 controls</text>
+
+<!-- Row 2 -->
+<rect x="30" y="152" width="148" height="64" rx="8" fill="#1D9E75" stroke="none"/>
+<text x="104" y="176" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">CM</text>
+<text x="104" y="192" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">Config Management</text>
+<text x="104" y="208" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">9 controls</text><rect x="188" y="152" width="148" height="64" rx="8" fill="#1D9E75" stroke="none"/>
+<text x="262" y="176" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">CP</text>
+<text x="262" y="192" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">Contingency Planning</text>
+<text x="262" y="208" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">10 controls</text><rect x="346" y="152" width="148" height="64" rx="8" fill="#1D9E75" stroke="none"/>
+<text x="420" y="176" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">IA</text>
+<text x="420" y="192" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">Identification &amp; Auth</text>
+<text x="420" y="208" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">12 controls</text><rect x="504" y="152" width="148" height="64" rx="8" fill="#185FA5" stroke="none"/>
+<text x="578" y="176" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">IR</text>
+<text x="578" y="192" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">Incident Response</text>
+<text x="578" y="208" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">10 controls</text>
+
+<!-- Row 3 -->
+<rect x="30" y="228" width="148" height="64" rx="8" fill="#1D9E75" stroke="none"/>
+<text x="104" y="252" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">MA</text>
+<text x="104" y="268" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">Maintenance</text>
+<text x="104" y="284" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">5 controls</text><rect x="188" y="228" width="148" height="64" rx="8" fill="#185FA5" stroke="none"/>
+<text x="262" y="252" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">MP</text>
+<text x="262" y="268" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">Media Protection</text>
+<text x="262" y="284" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">7 controls</text><rect x="346" y="228" width="148" height="64" rx="8" fill="#888780" stroke="none"/>
+<text x="420" y="252" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">PE</text>
+<text x="420" y="268" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">Physical Protection</text>
+<text x="420" y="284" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">Full inherit</text><rect x="504" y="228" width="148" height="64" rx="8" fill="#185FA5" stroke="none"/>
+<text x="578" y="252" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">PL</text>
+<text x="578" y="268" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">Planning</text>
+<text x="578" y="284" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">4 controls</text>
+
+<!-- Row 4 -->
+<rect x="30" y="304" width="148" height="64" rx="8" fill="#BA7517" stroke="none"/>
+<text x="104" y="328" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">PM</text>
+<text x="104" y="344" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">Programme Mgmt</text>
+<text x="104" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">Org controls</text><rect x="188" y="304" width="148" height="64" rx="8" fill="#185FA5" stroke="none"/>
+<text x="262" y="328" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">PS</text>
+<text x="262" y="344" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">Personnel Security</text>
+<text x="262" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">8 controls</text><rect x="346" y="304" width="148" height="64" rx="8" fill="#185FA5" stroke="none"/>
+<text x="420" y="328" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">PT</text>
+<text x="420" y="344" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">PII &amp; Privacy</text>
+<text x="420" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">6 controls</text><rect x="504" y="304" width="148" height="64" rx="8" fill="#185FA5" stroke="none"/>
+<text x="578" y="328" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">RA</text>
+<text x="578" y="344" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">Risk Assessment</text>
+<text x="578" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">7 controls</text>
+
+<!-- Row 5 -->
+<rect x="30" y="380" width="148" height="64" rx="8" fill="#185FA5" stroke="none"/>
+<text x="104" y="404" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">SA</text>
+<text x="104" y="420" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">System Acquisition</text>
+<text x="104" y="436" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">5 controls</text><rect x="188" y="380" width="148" height="64" rx="8" fill="#1D9E75" stroke="none"/>
+<text x="262" y="404" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">SC</text>
+<text x="262" y="420" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">System &amp; Comms</text>
+<text x="262" y="436" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">18 controls</text><rect x="346" y="380" width="148" height="64" rx="8" fill="#1D9E75" stroke="none"/>
+<text x="420" y="404" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">SI</text>
+<text x="420" y="420" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">System Integrity</text>
+<text x="420" y="436" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">12 controls</text><rect x="504" y="380" width="148" height="64" rx="8" fill="#185FA5" stroke="none"/>
+<text x="578" y="404" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="white">SR</text>
+<text x="578" y="420" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">Supply Chain</text>
+<text x="578" y="436" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">5 controls</text>
+
+<!-- Summary bar -->
+<rect x="30" y="460" width="620" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.8"/>
+<text x="340" y="478" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#1A4B8A">20 control families | ~140 controls selected | HIGH impact baseline | HIPAA aligned</text>
+<text x="340" y="496" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5">Most critical families: AC, AU, IA, SC, IR, SI, CP | Fully inherited: PE | Org-level: PM</text>
+</svg>
