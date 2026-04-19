@@ -1,0 +1,79 @@
+<svg width="100%" viewBox="0 0 680 460" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Bundle encryption architecture diagram</title>
+<desc>Diagram showing where encryption is applied across Bundle including TLS in transit between users and servers and AES-256 at rest for RDS, S3, and EBS</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<text x="340" y="26" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#1A4B8A">Bundle encryption architecture (SC-8 + SC-28)</text>
+<text x="340" y="44" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#555555">All PHI encrypted in transit and at rest — no unencrypted storage exists</text>
+
+<!-- User -->
+<rect x="20" y="70" width="100" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+<text x="70" y="96" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#3C3489">Staff user</text>
+
+<!-- TLS lock badge between user and WAF -->
+<rect x="132" y="78" width="66" height="28" rx="6" fill="#1A6B3C"/>
+<text x="165" y="96" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">TLS 1.2+</text>
+
+<!-- WAF + LB -->
+<rect x="210" y="70" width="130" height="44" rx="8" fill="#185FA5" stroke="#0C447C" stroke-width="0.5"/>
+<text x="275" y="88" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#E6F1FB">WAF + load balancer</text>
+<text x="275" y="104" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#B5D4F4">TLS termination</text>
+
+<!-- TLS lock between LB and EC2 -->
+<rect x="352" y="78" width="66" height="28" rx="6" fill="#1A6B3C"/>
+<text x="385" y="96" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">TLS 1.2+</text>
+
+<!-- EC2 -->
+<rect x="430" y="70" width="110" height="44" rx="8" fill="#1D9E75" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="485" y="88" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#E1F5EE">EC2 servers</text>
+<text x="485" y="104" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#9FE1CB">EBS encrypted</text>
+
+<!-- EBS lock -->
+<rect x="554" y="78" width="100" height="28" rx="6" fill="#1A6B3C"/>
+<text x="604" y="96" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">AES-256 EBS</text>
+
+<!-- Arrows along top row -->
+<line x1="120" y1="92" x2="130" y2="92" stroke="#534AB7" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="200" y1="92" x2="208" y2="92" stroke="#1A6B3C" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="340" y1="92" x2="350" y2="92" stroke="#1A6B3C" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="420" y1="92" x2="428" y2="92" stroke="#1A6B3C" stroke-width="1" marker-end="url(#arrow)"/>
+
+<!-- EC2 down to RDS -->
+<line x1="485" y1="114" x2="485" y2="168" stroke="#BA7517" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+<!-- TLS badge on EC2-RDS connection -->
+<rect x="494" y="134" width="60" height="22" rx="4" fill="#1A6B3C"/>
+<text x="524" y="149" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF">TLS</text>
+
+<!-- RDS -->
+<rect x="370" y="170" width="230" height="56" rx="8" fill="#BA7517" stroke="#854F0B" stroke-width="0.5"/>
+<text x="485" y="192" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#FAEEDA">RDS PostgreSQL</text>
+<text x="485" y="208" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#FAC775">All PHI — patient records, medications, diagnoses</text>
+<rect x="378" y="218" width="214" height="20" rx="4" fill="#1A6B3C"/>
+<text x="485" y="232" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF">AES-256 at rest — AWS KMS customer-managed key</text>
+
+<!-- EC2 to S3 -->
+<line x1="430" y1="92" x2="280" y2="295" stroke="#5F5E5A" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+
+<!-- S3 -->
+<rect x="110" y="296" width="220" height="56" rx="8" fill="#5F5E5A" stroke="#444441" stroke-width="0.5"/>
+<text x="220" y="318" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#F1EFE8">S3 document storage</text>
+<text x="220" y="334" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#D3D1C7">Medical documents, images, PDF reports</text>
+<rect x="118" y="344" width="204" height="20" rx="4" fill="#1A6B3C"/>
+<text x="220" y="358" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF">SSE-KMS — same customer key as RDS</text>
+
+<!-- KMS central -->
+<rect x="240" y="170" width="110" height="56" rx="8" fill="#1A4B8A" stroke="#042C53" stroke-width="0.5"/>
+<text x="295" y="192" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#E6F1FB">AWS KMS</text>
+<text x="295" y="208" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#B5D4F4">Key mgmt service</text>
+<text x="295" y="222" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#B5D4F4">Annual rotation</text>
+
+<!-- KMS arrows to RDS and S3 -->
+<line x1="350" y1="198" x2="372" y2="198" stroke="#1A4B8A" stroke-width="1" stroke-dasharray="4 2" marker-end="url(#arrow)"/>
+<line x1="295" y1="226" x2="250" y2="294" stroke="#1A4B8A" stroke-width="1" stroke-dasharray="4 2" marker-end="url(#arrow)"/>
+
+<!-- Summary at bottom -->
+<rect x="30" y="386" width="620" height="56" rx="8" fill="#E8F5E9" stroke="#1A6B3C" stroke-width="1"/>
+<text x="340" y="406" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#1A6B3C">Encryption summary</text>
+<text x="340" y="422" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1A6B3C">In transit: TLS 1.2+ (TLS 1.0/1.1 disabled) — SC-8 | At rest: AES-256 via KMS — SC-28</text>
+<text x="340" y="436" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1A6B3C">Key rotation: Annual | Evidence: AWS Config rules verify encryption monthly | No unencrypted storage</text>
+</svg>
