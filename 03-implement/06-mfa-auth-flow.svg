@@ -1,0 +1,65 @@
+<svg width="100%" viewBox="0 0 680 440" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Bundle MFA authentication flow</title>
+<desc>Step by step login flow showing user entering credentials, AWS Cognito MFA verification, and RBAC role assignment on login</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<text x="340" y="26" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#1A4B8A">Bundle MFA authentication flow (IA-2)</text>
+<text x="340" y="44" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#555">All 500 users required — hardware token for IT admins</text>
+<!-- Step boxes left to right -->
+<rect x="20" y="72" width="110" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+<text x="75" y="96" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#3C3489">Step 1</text>
+<text x="75" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#534AB7">User enters</text>
+<text x="75" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#534AB7">username + password</text>
+<line x1="130" y1="100" x2="148" y2="100" stroke="#534AB7" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+<rect x="150" y="72" width="110" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.8"/>
+<text x="205" y="96" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#0C447C">Step 2</text>
+<text x="205" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5">Cognito verifies</text>
+<text x="205" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5">password</text>
+<line x1="260" y1="100" x2="278" y2="100" stroke="#185FA5" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+<rect x="280" y="72" width="110" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.8"/>
+<text x="335" y="96" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#0C447C">Step 3</text>
+<text x="335" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5">Cognito requests</text>
+<text x="335" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5">MFA token</text>
+<line x1="390" y1="100" x2="408" y2="100" stroke="#185FA5" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+<rect x="410" y="72" width="110" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+<text x="465" y="96" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#085041">Step 4</text>
+<text x="465" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#0F6E56">User opens auth app</text>
+<text x="465" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#0F6E56">enters 6-digit code</text>
+<line x1="520" y1="100" x2="538" y2="100" stroke="#0F6E56" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+<rect x="540" y="72" width="120" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+<text x="600" y="96" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#085041">Step 5</text>
+<text x="600" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#0F6E56">Cognito verifies</text>
+<text x="600" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#0F6E56">TOTP code</text>
+
+<!-- Down arrow from step 5 -->
+<line x1="600" y1="128" x2="600" y2="176" stroke="#0F6E56" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+<!-- Step 6 -->
+<rect x="410" y="178" width="310" height="56" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.8"/>
+<text x="565" y="202" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#27500A">Step 6 — Session token issued</text>
+<text x="565" y="218" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#3B6D11">8-hour session. RBAC role assigned based on user account.</text>
+<line x1="460" y1="234" x2="280" y2="234" stroke="#3B6D11" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+<!-- Step 7 -->
+<rect x="20" y="178" width="258" height="56" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.8"/>
+<text x="149" y="202" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#27500A">Step 7 — Access granted</text>
+<text x="149" y="218" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#3B6D11">User sees only data their role permits</text>
+
+<!-- Failure path -->
+<rect x="150" y="290" width="380" height="56" rx="8" fill="#FFEBEE" stroke="#CC0000" stroke-width="0.8"/>
+<text x="340" y="314" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#8A0000">Failure path — 5 wrong attempts</text>
+<text x="340" y="330" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#CC0000">Account locked for 30 minutes. ISSO alerted via SNS. Event logged to CloudWatch.</text>
+<line x1="280" y1="128" x2="250" y2="288" stroke="#CC0000" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+
+<!-- RBAC table -->
+<text x="30" y="378" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#444441">RBAC roles assigned at login:</text>
+<text x="30" y="396" font-family="Arial,sans-serif" font-size="10" fill="#555">Doctor — full EHR read/write</text>
+<text x="180" y="396" font-family="Arial,sans-serif" font-size="10" fill="#555">Nurse — EHR read, medication write</text>
+<text x="390" y="396" font-family="Arial,sans-serif" font-size="10" fill="#555">Admin — scheduling only</text>
+<text x="30" y="412" font-family="Arial,sans-serif" font-size="10" fill="#555">Billing — financial records only</text>
+<text x="180" y="412" font-family="Arial,sans-serif" font-size="10" fill="#555">IT Admin — full system (separate account)</text>
+<text x="30" y="428" font-family="Arial,sans-serif" font-size="10" fill="#185FA5">Controls: IA-2, IA-2(1), IA-2(2), AC-2, AC-3, AC-7, AU-2</text>
+</svg>
