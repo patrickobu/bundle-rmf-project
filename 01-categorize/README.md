@@ -154,6 +154,10 @@ These are covered by AWS compliance reports (SOC 2, ISO 27001, HIPAA BAA):
 | Daily Backup | RDS → AWS Backup → S3 US East → S3 US West (cross-region) |
 | Audit Logging | All EC2 instances → CloudWatch Logs (90-day retention) |
 
+![Data flow diagram](04-data-flow-diagram.svg)
+
+![System boundary diagram](05-system-boundary.svg)
+
 > See `data-flow-diagram.png` for the visual representation of these flows.
 
 ---
