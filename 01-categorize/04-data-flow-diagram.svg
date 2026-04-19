@@ -1,0 +1,107 @@
+<svg width="100%" viewBox="0 0 680 580" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Bundle data flow diagram</title>
+<desc>Seven primary data flows showing how PHI and other data move through Bundle EHMS including login, record access, backups, and audit logging</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<text x="340" y="26" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#1A4B8A">Bundle EHMS — primary data flows</text>
+<text x="340" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#555555">All PHI flows are encrypted in transit (TLS 1.2+) and at rest (AES-256)</text>
+
+<!-- Central components column -->
+<!-- User -->
+<rect x="30" y="70" width="110" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+<text x="85" y="96" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#3C3489">Staff user</text>
+
+<!-- WAF+LB -->
+<rect x="200" y="70" width="130" height="44" rx="8" fill="#185FA5" stroke="#0C447C" stroke-width="0.5"/>
+<text x="265" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E6F1FB">WAF + load balancer</text>
+<text x="265" y="104" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#B5D4F4">Public subnet</text>
+
+<!-- EC2 -->
+<rect x="200" y="180" width="130" height="44" rx="8" fill="#1D9E75" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="265" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E1F5EE">EC2 app servers</text>
+<text x="265" y="214" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9FE1CB">Private subnet</text>
+
+<!-- RDS -->
+<rect x="200" y="290" width="130" height="44" rx="8" fill="#BA7517" stroke="#854F0B" stroke-width="0.5"/>
+<text x="265" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#FAEEDA">RDS database</text>
+<text x="265" y="324" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FAC775">PHI — encrypted</text>
+
+<!-- Active Directory -->
+<rect x="430" y="70" width="130" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="495" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#3C3489">Active Directory</text>
+<text x="495" y="104" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#534AB7">Hospital network</text>
+
+<!-- S3 -->
+<rect x="430" y="180" width="100" height="44" rx="8" fill="#5F5E5A" stroke="#444441" stroke-width="0.5"/>
+<text x="480" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#F1EFE8">S3 bucket</text>
+<text x="480" y="214" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#D3D1C7">Documents</text>
+
+<!-- CloudWatch -->
+<rect x="430" y="290" width="120" height="44" rx="8" fill="#5F5E5A" stroke="#444441" stroke-width="0.5"/>
+<text x="490" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#F1EFE8">CloudWatch</text>
+<text x="490" y="324" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#D3D1C7">Audit logs</text>
+
+<!-- AWS Backup / DR -->
+<rect x="430" y="390" width="120" height="44" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="490" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#712B13">AWS Backup</text>
+<text x="490" y="424" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#993C1D">US West — daily</text>
+
+<!-- Lab System -->
+<rect x="30" y="180" width="110" height="44" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="85" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#712B13">Lab system</text>
+<text x="85" y="214" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#993C1D">External</text>
+
+<!-- Insurance API -->
+<rect x="30" y="290" width="110" height="44" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="85" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#712B13">Insurance API</text>
+<text x="85" y="324" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#993C1D">External</text>
+
+<!-- FLOW ARROWS with labels -->
+<!-- Flow 1: User login -->
+<line x1="140" y1="92" x2="198" y2="92" stroke="#534AB7" stroke-width="1.2" marker-end="url(#arrow)"/>
+<text x="169" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#534AB7">1 HTTPS</text>
+
+<!-- WAF to EC2 -->
+<line x1="265" y1="114" x2="265" y2="178" stroke="#185FA5" stroke-width="1.2" marker-end="url(#arrow)"/>
+<text x="279" y="150" font-family="Arial, sans-serif" font-size="9" fill="#185FA5">HTTPS</text>
+
+<!-- EC2 to AD (auth) -->
+<line x1="330" y1="92" x2="428" y2="92" stroke="#534AB7" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+<text x="379" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#534AB7">1 LDAPS</text>
+
+<!-- Flow 2: Record access EC2 to RDS -->
+<line x1="265" y1="224" x2="265" y2="288" stroke="#BA7517" stroke-width="1.2" marker-end="url(#arrow)"/>
+<text x="279" y="260" font-family="Arial, sans-serif" font-size="9" fill="#854F0B">2 TLS</text>
+
+<!-- Flow 3: Doc upload EC2 to S3 -->
+<line x1="330" y1="202" x2="428" y2="202" stroke="#5F5E5A" stroke-width="1" marker-end="url(#arrow)"/>
+<text x="379" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#444441">3 upload</text>
+
+<!-- Flow 4: Lab results -->
+<line x1="140" y1="202" x2="198" y2="202" stroke="#993C1D" stroke-width="1" marker-end="url(#arrow)"/>
+<text x="169" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#993C1D">4 TLS</text>
+
+<!-- Flow 5: Insurance claim -->
+<line x1="200" y1="312" x2="142" y2="312" stroke="#993C1D" stroke-width="1" marker-end="url(#arrow)"/>
+<text x="171" y="306" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#993C1D">5 TLS</text>
+
+<!-- Flow 7: Audit logs EC2 to CloudWatch -->
+<line x1="330" y1="312" x2="428" y2="312" stroke="#5F5E5A" stroke-width="1" stroke-dasharray="3 3" marker-end="url(#arrow)"/>
+<text x="379" y="306" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#444441">7 logs</text>
+
+<!-- Flow 6: Backup RDS to AWS Backup -->
+<line x1="330" y1="334" x2="428" y2="408" stroke="#993C1D" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+<text x="410" y="380" font-family="Arial, sans-serif" font-size="9" fill="#993C1D">6 daily</text>
+
+<!-- Legend -->
+<text x="30" y="472" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#444441">Flow key:</text>
+<text x="100" y="472" font-family="Arial, sans-serif" font-size="11" fill="#444441">1 Login   2 Record access   3 Doc upload   4 Lab results   5 Insurance claim   6 Backup   7 Audit log</text>
+
+<rect x="30" y="488" width="620" height="40" rx="6" fill="#E8F5E9" stroke="#1A6B3C" stroke-width="0.5"/>
+<text x="340" y="506" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1A6B3C" font-weight="bold">All data flows carrying PHI are encrypted in transit (TLS 1.2+) and at rest (AES-256 via AWS KMS)</text>
+<text x="340" y="522" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1A6B3C">Controls: SC-8 (transmission) | SC-28 (at rest) | AU-2 (audit logging) | CP-9 (backup)</text>
+</svg>
