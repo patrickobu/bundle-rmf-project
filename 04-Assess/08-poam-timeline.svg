@@ -1,0 +1,63 @@
+<svg width="100%" viewBox="0 0 680 360" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>POA&amp;M remediation timeline</title>
+<desc>Horizontal timeline showing when each of the 6 POA&amp;M items was due and when it was actually closed, all completed within deadlines</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<text x="340" y="26" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#1A4B8A">POA&amp;M remediation timeline</text>
+<text x="340" y="44" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#555">All 6 original findings closed within target dates — post-ATO Year 1</text>
+
+<!-- Timeline axis -->
+<line x1="160" y1="80" x2="650" y2="80" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="155" y="84" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#444441">ATO issued</text>
+
+<!-- Month markers -->
+<line x1="250" y1="74" x2="250" y2="86" stroke="#888780" stroke-width="1"/>
+<text x="250" y="98" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#555">Day 30</text>
+<line x1="340" y1="74" x2="340" y2="86" stroke="#888780" stroke-width="1"/>
+<text x="340" y="98" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#555">Month 2</text>
+<line x1="460" y1="74" x2="460" y2="86" stroke="#888780" stroke-width="1"/>
+<text x="460" y="98" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#555">Month 3</text>
+<line x1="580" y1="74" x2="580" y2="86" stroke="#888780" stroke-width="1"/>
+<text x="580" y="98" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#555">Month 4</text>
+
+<!-- POA&M-001 HIGH -->
+<text x="155" y="128" text-anchor="end" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#CC0000">001 — HIGH</text>
+<text x="155" y="142" text-anchor="end" font-family="Arial,sans-serif" font-size="9" fill="#CC0000">IR training</text>
+<rect x="160" y="118" width="84" height="18" rx="4" fill="#CC0000" opacity="0.2"/>
+<rect x="160" y="118" width="78" height="18" rx="4" fill="#1D9E75"/>
+<text x="237" y="131" font-family="Arial,sans-serif" font-size="9" fill="#FFFFFF" font-weight="bold"> Day 28</text>
+<line x1="250" y1="118" x2="250" y2="136" stroke="#CC0000" stroke-width="1" stroke-dasharray="3 2"/>
+
+<!-- POA&M-006 LOW -->
+<text x="155" y="168" text-anchor="end" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#1D9E75">006 — LOW</text>
+<text x="155" y="182" text-anchor="end" font-family="Arial,sans-serif" font-size="9" fill="#1D9E75">Audit log format</text>
+<rect x="160" y="158" width="60" height="18" rx="4" fill="#1D9E75"/>
+<text x="220" y="171" font-family="Arial,sans-serif" font-size="9" fill="#FFFFFF" font-weight="bold"> Wk 2</text>
+
+<!-- POA&M-003 MODERATE -->
+<text x="155" y="208" text-anchor="end" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#BA7517">003 — MOD</text>
+<text x="155" y="222" text-anchor="end" font-family="Arial,sans-serif" font-size="9" fill="#BA7517">Background checks</text>
+<rect x="160" y="198" width="174" height="18" rx="4" fill="#BA7517" opacity="0.2"/>
+<rect x="160" y="198" width="166" height="18" rx="4" fill="#1D9E75"/>
+<text x="326" y="211" font-family="Arial,sans-serif" font-size="9" fill="#FFFFFF" font-weight="bold"> Mth 2</text>
+
+<!-- POA&M-004 MODERATE -->
+<text x="155" y="248" text-anchor="end" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#BA7517">004 — MOD</text>
+<text x="155" y="262" text-anchor="end" font-family="Arial,sans-serif" font-size="9" fill="#BA7517">Training module</text>
+<rect x="160" y="238" width="174" height="18" rx="4" fill="#BA7517" opacity="0.2"/>
+<rect x="160" y="238" width="168" height="18" rx="4" fill="#1D9E75"/>
+<text x="328" y="251" font-family="Arial,sans-serif" font-size="9" fill="#FFFFFF" font-weight="bold"> Mth 2</text>
+
+<!-- POA&M-002 MODERATE -->
+<text x="155" y="288" text-anchor="end" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#BA7517">002 — MOD</text>
+<text x="155" y="302" text-anchor="end" font-family="Arial,sans-serif" font-size="9" fill="#BA7517">Lambda config</text>
+<rect x="160" y="278" width="294" height="18" rx="4" fill="#BA7517" opacity="0.2"/>
+<rect x="160" y="278" width="290" height="18" rx="4" fill="#1D9E75"/>
+<text x="450" y="291" font-family="Arial,sans-serif" font-size="9" fill="#FFFFFF" font-weight="bold"> Mth 3</text>
+
+<!-- POA&M-005 LOW -->
+<text x="155" y="328" text-anchor="end" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#1D9E75">005 — LOW</text>
+<text x="155" y="342" text-anchor="end" font-family="Arial,sans-serif" font-size="9" fill="#1D9E75">Static API keys</text>
+<rect x="160" y="318" width="414" height="18" rx="4" fill="#1D9E75" opacity="0.3"/>
+<rect x="160" y="318" width="408" height="18" rx="4" fill="#1D9E75"/>
+<text x="568" y="331" font-family="Arial,sans-serif" font-size="9" fill="#FFFFFF" font-weight="bold"> Mth 4</text>
+</svg>
