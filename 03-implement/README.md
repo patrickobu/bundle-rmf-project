@@ -157,6 +157,8 @@ All Bundle users authenticate via AWS Cognito with two factors: (1) username + p
 
 **Evidence:** `evidence/IA/IA-2-cognito-mfa-config-screenshot.png` | `evidence/IA/IA-2-mfa-enforcement-policy.md`
 
+![MFA authentication flow](06-mfa-auth-flow.svg)
+
 ---
 
 #### IA-2(1) — MFA for Privileged Accounts
