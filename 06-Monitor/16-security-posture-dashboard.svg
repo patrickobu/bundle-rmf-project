@@ -1,0 +1,76 @@
+<svg width="100%" viewBox="0 0 680 460" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Bundle security posture dashboard Year 1</title>
+<desc>One page security posture summary showing overall rating STRONG, scorecard by area, POA&amp;M summary, incident count, scan summary, and ATO status</desc>
+<text x="340" y="26" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#1A4B8A">Security posture dashboard — Year 1</text>
+<text x="340" y="44" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#555555">Bundle EHMS | ATO: BUNDLE-ATO-2025-001 | Prepared by: James Okafor, ISSO</text>
+
+<!-- Overall posture banner -->
+<rect x="30" y="56" width="620" height="52" rx="10" fill="#1D9E75" stroke="#0F6E56" stroke-width="1"/>
+<text x="340" y="78" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">Overall security posture — STRONG</text>
+<text x="340" y="98" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#E1F5EE">All original POA&amp;M items closed | Zero confirmed breaches | ATO valid through 2028</text>
+
+<!-- Scorecard grid -->
+<rect x="30" y="126" width="207" height="58" rx="6" fill="#1D9E7522" stroke="#1D9E75" stroke-width="0.8"/>
+<rect x="38" y="134" width="70" height="20" rx="4" fill="#1D9E75"/>
+<text x="73" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">STRONG</text>
+<text x="116" y="148" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#085041">Access Control</text>
+<text x="40" y="172" font-family="Arial,sans-serif" font-size="9" fill="#555">MFA all users, RBAC enforced</text><rect x="247" y="126" width="207" height="58" rx="6" fill="#1D9E7522" stroke="#1D9E75" stroke-width="0.8"/>
+<rect x="255" y="134" width="70" height="20" rx="4" fill="#1D9E75"/>
+<text x="290" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">STRONG</text>
+<text x="333" y="148" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#085041">Data Encryption</text>
+<text x="257" y="172" font-family="Arial,sans-serif" font-size="9" fill="#555">AES-256 at rest + TLS 1.2+</text><rect x="464" y="126" width="207" height="58" rx="6" fill="#1D9E7522" stroke="#1D9E75" stroke-width="0.8"/>
+<rect x="472" y="134" width="70" height="20" rx="4" fill="#1D9E75"/>
+<text x="507" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">STRONG</text>
+<text x="550" y="148" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#085041">Network Security</text>
+<text x="474" y="172" font-family="Arial,sans-serif" font-size="9" fill="#555">VPC, WAF, private subnets</text><rect x="30" y="194" width="207" height="58" rx="6" fill="#1D9E7522" stroke="#1D9E75" stroke-width="0.8"/>
+<rect x="38" y="202" width="70" height="20" rx="4" fill="#1D9E75"/>
+<text x="73" y="216" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">STRONG</text>
+<text x="116" y="216" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#085041">Audit &amp; Monitoring</text>
+<text x="40" y="240" font-family="Arial,sans-serif" font-size="9" fill="#555">CloudWatch + GuardDuty active</text><rect x="247" y="194" width="207" height="58" rx="6" fill="#1D9E7522" stroke="#1D9E75" stroke-width="0.8"/>
+<rect x="255" y="202" width="70" height="20" rx="4" fill="#1D9E75"/>
+<text x="290" y="216" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">STRONG</text>
+<text x="333" y="216" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#085041">Incident Response</text>
+<text x="257" y="240" font-family="Arial,sans-serif" font-size="9" fill="#555">IR plan tested, staff trained</text><rect x="464" y="194" width="207" height="58" rx="6" fill="#1D9E7522" stroke="#1D9E75" stroke-width="0.8"/>
+<rect x="472" y="202" width="70" height="20" rx="4" fill="#1D9E75"/>
+<text x="507" y="216" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">STRONG</text>
+<text x="550" y="216" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#085041">Vulnerability Mgmt</text>
+<text x="474" y="240" font-family="Arial,sans-serif" font-size="9" fill="#555">Monthly scans, no overdue CVEs</text><rect x="30" y="262" width="207" height="58" rx="6" fill="#1D9E7522" stroke="#1D9E75" stroke-width="0.8"/>
+<rect x="38" y="270" width="70" height="20" rx="4" fill="#1D9E75"/>
+<text x="73" y="284" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">STRONG</text>
+<text x="116" y="284" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#085041">Backup &amp; Recovery</text>
+<text x="40" y="308" font-family="Arial,sans-serif" font-size="9" fill="#555">RTO 4hrs confirmed in DR test</text><rect x="247" y="262" width="207" height="58" rx="6" fill="#BA751722" stroke="#BA7517" stroke-width="0.8"/>
+<rect x="255" y="270" width="70" height="20" rx="4" fill="#BA7517"/>
+<text x="290" y="284" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">MODERATE</text>
+<text x="333" y="284" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#633806">Workforce Security</text>
+<text x="257" y="308" font-family="Arial,sans-serif" font-size="9" fill="#555">2 LOW items still open</text><rect x="464" y="262" width="207" height="58" rx="6" fill="#1D9E7522" stroke="#1D9E75" stroke-width="0.8"/>
+<rect x="472" y="270" width="70" height="20" rx="4" fill="#1D9E75"/>
+<text x="507" y="284" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">STRONG</text>
+<text x="550" y="284" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#085041">Config Management</text>
+<text x="474" y="308" font-family="Arial,sans-serif" font-size="9" fill="#555">AWS Config all compliant</text>
+
+<!-- Metrics strip -->
+<rect x="30" y="338" width="148" height="70" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.8"/>
+<text x="104" y="358" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5" font-weight="bold">POA&amp;M status</text>
+<text x="104" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#1A4B8A">6/6</text>
+<text x="104" y="398" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5">original items closed</text>
+
+<rect x="188" y="338" width="148" height="70" rx="8" fill="#E8F5E9" stroke="#1A6B3C" stroke-width="0.8"/>
+<text x="262" y="358" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1A6B3C" font-weight="bold">Confirmed incidents</text>
+<text x="262" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#1A6B3C">0</text>
+<text x="262" y="398" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1A6B3C">PHI breaches Year 1</text>
+
+<rect x="346" y="338" width="148" height="70" rx="8" fill="#E8F5E9" stroke="#1A6B3C" stroke-width="0.8"/>
+<text x="420" y="358" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1A6B3C" font-weight="bold">Monthly scans</text>
+<text x="420" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#1A6B3C">12/12</text>
+<text x="420" y="398" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1A6B3C">completed on schedule</text>
+
+<rect x="504" y="338" width="146" height="70" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.8"/>
+<text x="577" y="358" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#27500A" font-weight="bold">ATO status</text>
+<text x="577" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#1A6B3C">VALID</text>
+<text x="577" y="398" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#27500A">Expires 2028</text>
+
+<!-- Footer -->
+<rect x="30" y="422" width="620" height="28" rx="6" fill="#F4F7FC" stroke="#CCCCCC" stroke-width="0.5"/>
+<text x="340" y="436" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#555">Next reauthorization: 2027 (Month 18 planning)  |  Next quarterly report due: Q2 2026  |  Open items: 2 Low CVEs within SLA</text>
+<text x="340" y="450" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#185FA5">Framework: NIST SP 800-37 Rev.2  |  Controls: NIST SP 800-53 Rev.5  |  Regulation: HIPAA/HITECH</text>
+</svg>
