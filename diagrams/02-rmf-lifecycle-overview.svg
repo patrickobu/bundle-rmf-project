@@ -6,7 +6,7 @@
 <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </marker>
 </defs>
-
+  
 <!-- Title -->
 <text x="340" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#1A4B8A">NIST SP 800-37 Rev.2 — RMF lifecycle</text>
 <text x="340" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#555555">Bundle EHMS — 7-step security authorisation process</text>
