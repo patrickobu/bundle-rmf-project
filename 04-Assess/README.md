@@ -260,6 +260,8 @@ Weekly audit reviews are being conducted correctly but documented in unstructure
 
 **Resources:** ~3 hours ISSO time. No additional tools or budget.
 
+![POA&M remediation timeline](08-poam-timeline.svg)
+
 ---
 
 ## Assessor Conclusion
