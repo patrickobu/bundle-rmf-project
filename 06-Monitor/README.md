@@ -233,6 +233,8 @@ Structured template implemented Week 2. All subsequent reviews using new format.
 | Annual Security Review | ✅ Complete |
 | Avg AWS Config Non-Compliant Resources | 0.3/month (all resolved within threshold) |
 
+![Security posture dashboard](16-security-posture-dashboard.svg)
+
 ---
 
 ## Change Management Log
