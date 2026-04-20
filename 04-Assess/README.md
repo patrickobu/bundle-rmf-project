@@ -36,6 +36,8 @@ The Assess step produces three key outputs:
 | `poam.md` | Plan of Action and Milestones — all 6 findings with remediation details |
 | `assessment-evidence-log.md` | Log of assessment activities, methods used, and evidence reviewed |
 
+![POA&M remediation timeline](08-poam-timeline.svg)
+
 ---
 
 ## Assessment Overview
