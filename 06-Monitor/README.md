@@ -60,6 +60,8 @@ The Monitor step runs continuously for the entire **three-year life of the Autho
 | Annual Security Review | Annually | James Okafor (ISSO) | All RMF docs |
 | Reauthorization Preparation | Month 18 (2027) | James Okafor (ISSO) | Full RMF lifecycle |
 
+![Continuous monitoring calendar](10-conmon-calendar.svg)
+
 ---
 
 ## Escalation Thresholds
