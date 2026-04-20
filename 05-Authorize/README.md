@@ -65,6 +65,8 @@ All documents submitted to the AO for review:
 | AWS SOC 2 Type II Report | `evidence/aws-compliance/` | ✅ Complete |
 | AWS HIPAA Business Associate Agreement | `evidence/aws-compliance/` | ✅ Complete |
 
+![Authorization package components](09-ato-package.svg)
+
 ---
 
 ## Risk Executive Summary
