@@ -23,7 +23,6 @@ Every step of the RMF lifecycle is documented — from the initial preparation a
 
 ## About Bundle
 
-![Bundle system architecture](diagrams/01-bundle-system-architecture.svg)
 
 **Bundle** is a fictional cloud-based Electronic Healthcare Management System (EHMS) serving approximately 500 clinical and administrative staff across a mid-sized hospital network. It acts as the central platform for all clinical and administrative operations — managing Electronic Health Records (EHR), patient scheduling, medication tracking, insurance billing, and staff access control.
 
