@@ -125,6 +125,7 @@ The Monitor step runs continuously for the entire **three-year life of the Autho
 | Month 2 | 0 | 1 | 2 | 6 | 9 + ZAP | 2 |
 | Month 3 | 0 | 0 | 2 | 5 | 7 | 3 |
 
+![Vulnerability scan trend](15-vulnerability-scan-trend.svg)
 ---
 
 ## POA&M — Month 3 Status
