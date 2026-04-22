@@ -27,15 +27,15 @@ Each objective is rated **Low**, **Moderate**, or **High**. The highest rating a
 
 | File | Description |
 |------|-------------|
-| `README.md` | This file — overview of the Categorize step and key outputs |
-| `system-description.md` | Detailed description of Bundle including users, architecture, and AWS services |
-| `information-types.md` | All information types processed by Bundle with regulatory basis |
-| `fips199-impact-analysis.md` | Full FIPS 199 categorization with ratings and justifications |
-| `system-boundary.md` | What is inside and outside the RMF authorization scope |
-| `hardware-software-inventory.md` | Inventory of key system components and software versions |
-| `data-flow-description.md` | How PHI and other data move through Bundle |
-| `data-flow-diagram.png` | Visual diagram of system data flows *(to be added)* |
-| `categorization-decision-record.md` | Formal categorization statement and approval record |
+| [README.md](README.md) | This file — overview of the Categorize step and key outputs |
+| [system-description.md](system-description.md) | Detailed description of Bundle including users, architecture, and AWS services |
+| [information-types.md](information-types.md) | All information types processed by Bundle with regulatory basis |
+| [fips199-impact-analysis.md](fips199-impact-analysis.md) | Full FIPS 199 categorization with ratings and justifications |
+| [system-boundary.md](system-boundary.md) | What is inside and outside the RMF authorization scope |
+| [hardware-software-inventory.md](hardware-software-inventory.md) | Inventory of key system components and software versions |
+| [data-flow-description.md](data-flow-description.md) | How PHI and other data move through Bundle |
+| [categorization-decision-record.md](categorization-decision-record.md) | Formal categorization statement and approval record |
+
 
 ---
 
