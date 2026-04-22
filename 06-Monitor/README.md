@@ -27,17 +27,12 @@ The Monitor step runs continuously for the entire **three-year life of the Autho
 
 ## Documents in This Folder
 
+
 | File | Description |
 |------|-------------|
-| `README.md` | This file — full monitoring programme, scan reports, and POA&M updates |
-| `continuous-monitoring-strategy.md` | Full ConMon strategy with activities, frequencies, and thresholds |
-| `scan-reports/` | Monthly vulnerability scan report summaries |
-| `poam-updates.md` | Living POA&M — all findings with current status |
-| `quarterly-posture-reports/` | Q1–Q4 posture reports submitted to AO |
-| `change-management-log.md` | Record of all system changes with security assessments |
-| `audit-review-log.md` | Weekly structured audit log review records |
-| `conmon-metrics-dashboard.md` | Year-one monitoring metrics summary |
-
+| [README.md](README.md) | This file — full ConMon programme and Year One results |
+| [continuous-monitoring-strategy.md](continuous-monitoring-strategy.md) | 15 monitoring activities with frequencies and thresholds |
+| [poam-updates.md](poam-updates.md) | Living POA&M with all status updates |
 ---
 
 ## Monitoring Activities at a Glance
