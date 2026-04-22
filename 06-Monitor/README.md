@@ -42,6 +42,8 @@ The Monitor step runs continuously for the entire **three-year life of the Autho
 
 ## Monitoring Activities at a Glance
 
+![Continuous monitoring calendar](10-conmon-calendar.svg)
+
 | Activity | Frequency | Owner | Tool |
 |----------|-----------|-------|------|
 | Vulnerability Scanning (EC2) | Monthly | Priya Nair (ISSE) | AWS Inspector |
