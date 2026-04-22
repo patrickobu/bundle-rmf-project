@@ -28,14 +28,13 @@ The Assess step produces three key outputs:
 
 ## Documents in This Folder
 
+
 | File | Description |
 |------|-------------|
-| `README.md` | This file — overview, SAR summary, and POA&M |
-| `security-assessment-plan.md` | Full SAP including scope, team, schedule, and rules of engagement |
-| `security-assessment-report.md` | Complete SAR with all findings and passed controls |
-| `poam.md` | Plan of Action and Milestones — all 6 findings with remediation details |
-| `assessment-evidence-log.md` | Log of assessment activities, methods used, and evidence reviewed |
-
+| [README.md](README.md) | This file — overview of the Assess step and all findings |
+| [security-assessment-plan.md](security-assessment-plan.md) | SAP — scope, team, schedule, and rules of engagement |
+| [security-assessment-report.md](security-assessment-report.md) | Full SAR — 6 findings and 24 passed controls |
+| [poam.md](poam.md) | Plan of Action and Milestones — all findings tracked |
 ---
 
 ## Assessment Overview
