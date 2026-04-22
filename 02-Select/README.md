@@ -24,14 +24,14 @@ Security controls are the specific safeguards — policies, technical settings, 
 
 ## Documents in This Folder
 
+
 | File | Description |
 |------|-------------|
-| `README.md` | This file — overview of the Select step and key outputs |
-| `control-selection.md` | Full list of selected controls across all 20 families with owners |
-| `tailoring-decisions.md` | Controls added, removed, or modified with justification |
-| `inherited-controls.md` | AWS inherited controls and compliance evidence sources |
-| `system-security-plan-draft.md` | SSP draft — structure and completed sections |
-| `control-responsibility-matrix.md` | RACI matrix for control implementation ownership |
+| [README.md](README.md) | This file — overview of the Select step |
+| [control-selection.md](control-selection.md) | All 20 NIST 800-53 control families with tailoring decisions |
+| [tailoring-decisions.md](tailoring-decisions.md) | Detailed justification for every tailoring decision |
+| [inherited-controls.md](inherited-controls.md) | AWS inherited controls with evidence sources |
+| [control-responsibility-matrix.md](control-responsibility-matrix.md) | RACI for all controls |
 
 ---
 
