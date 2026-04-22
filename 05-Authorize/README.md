@@ -26,13 +26,9 @@ For Bundle — the answer is **YES, with conditions.**
 
 | File | Description |
 |------|-------------|
-| `README.md` | This file — full authorization package including ATO letter |
-| `authorization-package-index.md` | Index of all documents submitted for AO review |
-| `risk-executive-summary.md` | Plain-English security posture summary for the AO |
-| `risk-acceptance-memo.md` | AO's formal written acceptance of residual risks |
-| `ato-letter.md` | The official signed Authorization to Operate |
-| `privacy-impact-assessment.md` | HIPAA privacy compliance review |
-| `ato-conditions-tracker.md` | Live tracker of ATO conditions and compliance status |
+| [README.md](README.md) | This file — full authorization package and ATO letter |
+| [ato-letter.md](ato-letter.md) | Signed ATO letter — BUNDLE-ATO-2025-001 |
+| [risk-acceptance-memo.md](risk-acceptance-memo.md) | AO formal risk acceptance memorandum |
 
 ---
 
