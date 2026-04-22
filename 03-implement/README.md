@@ -27,11 +27,9 @@ This step also **finalises the System Security Plan (SSP)** — the master secur
 
 | File | Description |
 |------|-------------|
-| `README.md` | This file — overview and implementation status summary |
-| `control-implementation-statements.md` | Full implementation statements for all controls |
-| `system-security-plan-final.md` | Completed SSP — all ten sections |
-| `implementation-status-tracker.xlsx` | Control status tracker with POA&M references |
-| `evidence/` | Folder containing all supporting evidence by control family |
+| [README.md](README.md) | This file — overview of the Implement step |
+| [control-implementation-statements.md](control-implementation-statements.md) | Detailed implementation statements for all 25 controls |
+| [system-security-plan-final.md](system-security-plan-final.md) | Complete SSP — all 10 sections |
 
 ---
 
