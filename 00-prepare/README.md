@@ -22,16 +22,12 @@ The Prepare step is the foundation of the entire RMF process. Before any securit
 
 ## Documents in This Folder
 
+
 | File | Description |
 |------|-------------|
-| `README.md` | This file — overview of the Prepare step |
-| `roles-and-responsibilities.md` | RMF role assignments and RACI matrix |
-| `risk-management-strategy.md` | Risk tolerance, assessment approach, and response options |
-| `mission-and-business-context.md` | Why Bundle exists and what critical functions it supports |
-| `preliminary-risk-assessment.md` | High-level threat assessment conducted before categorisation |
-| `applicable-laws-and-standards.md` | HIPAA, HITECH, NIST publications and other applicable requirements |
-| `prepare-checklist.md` | Completion checklist mapped to NIST SP 800-37 Rev. 2 tasks |
-
+| [README.md](README.md) | This file — overview of the Prepare step |
+| [roles-and-responsibilities.md](roles-and-responsibilities.md) | RMF role assignments and RACI matrix |
+| [risk-management-strategy.md](risk-management-strategy.md) | Risk tolerance, assessment approach, and risk response options |
 ---
 
 ## System: Bundle EHMS
