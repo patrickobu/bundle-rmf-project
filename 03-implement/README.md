@@ -5,6 +5,8 @@
 ![SSP](https://img.shields.io/badge/SSP-Final-brightgreen)
 ![Controls](https://img.shields.io/badge/Controls-Documented-brightgreen)
 
+![Bundle SSP Architecture](bundle-ssp-architecture.svg)
+
 ---
 
 ## What is the Implement Step?
