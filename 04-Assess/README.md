@@ -35,7 +35,7 @@ The Assess step produces three key outputs:
 | [security-assessment-plan.md](security-assessment-plan.md) | SAP — scope, team, schedule, and rules of engagement |
 | [security-assessment-report.md](security-assessment-report.md) | Full SAR — 6 findings and 24 passed controls |
 | [poam.md](poam.md) | Plan of Action and Milestones — all findings tracked |
----
+
 
 ## Assessment Overview
 
