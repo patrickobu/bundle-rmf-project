@@ -38,6 +38,9 @@ Bundle processes Protected Health Information (PHI) and is subject to
 HIPAA and HITECH regulations. It is hosted on Amazon Web Services (AWS)
 using EC2, RDS, S3, CloudWatch, IAM, KMS, and WAF.
 
+
+![Bundle SSP Architecture](bundle-ssp-architecture.svg)
+
 ---
 
 ## Section 3 — System Environment and Architecture
