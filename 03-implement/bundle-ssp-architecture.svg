@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 580" width="740" height="580">
+
+<!-- White background -->
+<rect width="740" height="580" fill="#ffffff"/>
+
+<!-- Title -->
+<text x="370" y="28" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1A4B8A">Bundle EHMS — System Security Plan Architecture</text>
+<text x="370" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#555555">GOVCLOUD-EHMS-001 — HIGH Impact — AWS Hosted — HIPAA Compliant</text>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- INTERNET ZONE -->
+<!-- ═══════════════════════════════════════ -->
+<rect x="10" y="58" width="720" height="54" rx="6" fill="#FFF8E1" stroke="#E6A817" stroke-width="1.5"/>
+<text x="20" y="74" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#7A5200">INTERNET ZONE</text>
+
+<!-- Users box -->
+<rect x="30" y="78" width="120" height="26" rx="4" fill="#E6A817"/>
+<text x="90" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">500 Clinical Staff</text>
+
+<!-- External systems -->
+<rect x="180" y="78" width="120" height="26" rx="4" fill="#E6A817"/>
+<text x="240" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">Lab System (HL7)</text>
+
+<rect x="330" y="78" width="120" height="26" rx="4" fill="#E6A817"/>
+<text x="390" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">Pharmacy API</text>
+
+<rect x="480" y="78" width="120" height="26" rx="4" fill="#E6A817"/>
+<text x="540" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">Insurance Billing</text>
+
+<!-- Arrow down from internet -->
+<line x1="370" y1="112" x2="370" y2="128" stroke="#993C1D" stroke-width="2"/>
+<polygon points="365,124 370,132 375,124" fill="#993C1D"/>
+<text x="400" y="124" font-family="Arial, sans-serif" font-size="9" fill="#993C1D">HTTPS TLS 1.2+</text>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- AWS GOVCLOUD VPC -->
+<!-- ═══════════════════════════════════════ -->
+<rect x="10" y="132" width="720" height="390" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="2"/>
+<text x="20" y="150" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0C447C">AWS GovCloud VPC — FedRAMP High Authorized</text>
+
+<!-- ─────────────────────────────────────── -->
+<!-- PUBLIC SUBNET -->
+<!-- ─────────────────────────────────────── -->
+<rect x="25" y="158" width="695" height="80" rx="6" fill="#FFEBEE" stroke="#CC0000" stroke-width="1.2"/>
+<text x="35" y="173" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#8A0000">PUBLIC SUBNET — Perimeter Layer</text>
+
+<!-- WAF -->
+<rect x="50" y="180" width="130" height="46" rx="5" fill="#CC0000"/>
+<text x="115" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">AWS WAF</text>
+<text x="115" y="212" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ffcccc">Web Application Firewall</text>
+<text x="115" y="222" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ffcccc">Managed rule groups</text>
+
+<!-- Arrow -->
+<line x1="185" y1="203" x2="215" y2="203" stroke="#CC0000" stroke-width="1.5"/>
+<polygon points="211,199 219,203 211,207" fill="#CC0000"/>
+
+<!-- ALB -->
+<rect x="220" y="180" width="160" height="46" rx="5" fill="#D85A30"/>
+<text x="300" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Application Load Balancer</text>
+<text x="300" y="212" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#fde8e0">HTTPS only — port 443</text>
+<text x="300" y="222" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#fde8e0">TLS termination</text>
+
+<!-- Arrow -->
+<line x1="385" y1="203" x2="415" y2="203" stroke="#D85A30" stroke-width="1.5"/>
+<polygon points="411,199 419,203 411,207" fill="#D85A30"/>
+
+<!-- Cognito -->
+<rect x="420" y="180" width="150" height="46" rx="5" fill="#534AB7"/>
+<text x="495" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">AWS Cognito</text>
+<text x="495" y="212" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#d8d6f8">User authentication</text>
+<text x="495" y="222" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#d8d6f8">MFA enforcement</text>
+
+<!-- Arrow to app layer -->
+<line x1="300" y1="228" x2="300" y2="248" stroke="#185FA5" stroke-width="1.5"/>
+<polygon points="295,244 300,252 305,244" fill="#185FA5"/>
+
+<!-- ─────────────────────────────────────── -->
+<!-- PRIVATE APPLICATION SUBNET -->
+<!-- ─────────────────────────────────────── -->
+<rect x="25" y="252" width="695" height="88" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+<text x="35" y="268" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#085041">PRIVATE APPLICATION SUBNET — No Direct Internet Access</text>
+
+<!-- EC2 App -->
+<rect x="50" y="276" width="160" height="52" rx="5" fill="#1D9E75"/>
+<text x="130" y="296" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">EC2 App Servers</text>
+<text x="130" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#9fe1cb">Amazon Linux 2023</text>
+<text x="130" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#9fe1cb">CIS Level 2 hardened</text>
+
+<!-- Arrow -->
+<line x1="215" y1="302" x2="245" y2="302" stroke="#0F6E56" stroke-width="1.5"/>
+<polygon points="241,298 249,302 241,306" fill="#0F6E56"/>
+
+<!-- EC2 API -->
+<rect x="250" y="276" width="160" height="52" rx="5" fill="#185FA5"/>
+<text x="330" y="296" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">EC2 API Servers</text>
+<text x="330" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#b5d4f4">Node.js application</text>
+<text x="330" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#b5d4f4">CrowdStrike Falcon EDR</text>
+
+<!-- Arrow to DB -->
+<line x1="330" y1="330" x2="330" y2="350" stroke="#185FA5" stroke-width="1.5"/>
+<polygon points="325,346 330,354 335,346" fill="#185FA5"/>
+
+<!-- GuardDuty -->
+<rect x="450" y="276" width="160" height="52" rx="5" fill="#534AB7"/>
+<text x="530" y="296" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">AWS GuardDuty</text>
+<text x="530" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#cec bf6">ML threat detection</text>
+<text x="530" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#cecbf6">Real-time alerts to ISSO</text>
+
+<!-- ─────────────────────────────────────── -->
+<!-- PRIVATE DATABASE SUBNET -->
+<!-- ─────────────────────────────────────── -->
+<rect x="25" y="350" width="695" height="88" rx="6" fill="#FDF4F2" stroke="#993C1D" stroke-width="1.2"/>
+<text x="35" y="366" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#712B13">PRIVATE DATABASE SUBNET — PHI Data Layer — AES-256 Encrypted</text>
+
+<!-- RDS -->
+<rect x="50" y="374" width="175" height="52" rx="5" fill="#993C1D"/>
+<text x="137" y="394" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">RDS PostgreSQL</text>
+<text x="137" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f5c4b3">Patient records — PHI</text>
+<text x="137" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f5c4b3">AES-256 KMS CMK</text>
+
+<!-- S3 -->
+<rect x="255" y="374" width="175" height="52" rx="5" fill="#BA7517"/>
+<text x="342" y="394" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">S3 Document Store</text>
+<text x="342" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#fac775">Medical docs and images</text>
+<text x="342" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#fac775">SSE-KMS versioning on</text>
+
+<!-- KMS -->
+<rect x="460" y="374" width="175" height="52" rx="5" fill="#1A4B8A"/>
+<text x="547" y="394" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">AWS KMS</text>
+<text x="547" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#b5d4f4">FIPS 140-2 Level 3 HSMs</text>
+<text x="547" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#b5d4f4">Customer managed keys</text>
+
+<!-- ─────────────────────────────────────── -->
+<!-- LOGGING AND MONITORING LAYER -->
+<!-- ─────────────────────────────────────── -->
+<rect x="25" y="448" width="695" height="66" rx="6" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1.2"/>
+<text x="35" y="464" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#27500A">LOGGING AND MONITORING — All Events Captured</text>
+
+<!-- CloudTrail -->
+<rect x="50" y="472" width="130" height="34" rx="4" fill="#3B6D11"/>
+<text x="115" y="487" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">CloudTrail</text>
+<text x="115" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#c5e0a8">All API calls logged</text>
+
+<!-- CloudWatch -->
+<rect x="200" y="472" width="130" height="34" rx="4" fill="#3B6D11"/>
+<text x="265" y="487" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">CloudWatch</text>
+<text x="265" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#c5e0a8">90-day active retention</text>
+
+<!-- Security Hub -->
+<rect x="350" y="472" width="130" height="34" rx="4" fill="#3B6D11"/>
+<text x="415" y="487" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">Security Hub</text>
+<text x="415" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#c5e0a8">Consolidated findings</text>
+
+<!-- AWS Backup -->
+<rect x="500" y="472" width="130" height="34" rx="4" fill="#3B6D11"/>
+<text x="565" y="487" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">AWS Backup</text>
+<text x="565" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#c5e0a8">Daily — cross-region</text>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- BOTTOM INFO BAR -->
+<!-- ═══════════════════════════════════════ -->
+<rect x="10" y="530" width="720" height="42" rx="6" fill="#1A4B8A"/>
+<text x="370" y="548" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Bundle EHMS — GOVCLOUD-EHMS-001 — HIGH Impact — ATO: BUNDLE-ATO-2025-001</text>
+<text x="370" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#b5d4f4">Confidentiality: HIGH  |  Integrity: HIGH  |  Availability: MODERATE  |  HIPAA Compliant  |  325 Controls</text>
+
+</svg>
