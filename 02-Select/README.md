@@ -27,12 +27,14 @@ Security controls are the specific safeguards — policies, technical settings, 
 
 | File | Description |
 |------|-------------|
+
+| File | Description |
+|------|-------------|
 | [README.md](README.md) | This file — overview of the Select step |
 | [control-selection.md](control-selection.md) | All 20 NIST 800-53 control families with tailoring decisions |
 | [tailoring-decisions.md](tailoring-decisions.md) | Detailed justification for every tailoring decision |
 | [inherited-controls.md](inherited-controls.md) | AWS inherited controls with evidence sources |
 | [control-responsibility-matrix.md](control-responsibility-matrix.md) | RACI for all controls |
-
 ---
 
 ## Control Selection Approach
