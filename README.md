@@ -9,7 +9,6 @@
 ![Steps](https://img.shields.io/badge/RMF%20Steps-7%20of%207%20Complete-brightgreen)
 ![Status](https://img.shields.io/badge/Status-Active%20ConMon-brightgreen)
 
----
 
 ## About This Project
 
@@ -19,7 +18,6 @@ Every step of the RMF lifecycle is documented — from the initial preparation a
 
 > **This is a portfolio and learning project.** All names, system details, and scenarios are fictional. Bundle does not exist. No real patient data is used anywhere in this repository.
 
----
 
 ## About Bundle
 
@@ -47,7 +45,6 @@ Bundle is formally categorised as a **HIGH impact system** under FIPS 199, meani
 
 ![Network topology](diagrams/03-network-topology.svg)
 
----
 
 ## RMF Progress Tracker
 
@@ -61,11 +58,9 @@ Bundle is formally categorised as a **HIGH impact system** under FIPS 199, meani
 | [Step 5](./05-authorize/README.md) | **Authorize** | Risk acceptance memo, ATO letter issued — BUNDLE-ATO-2025-001 | ✅ Complete |
 | [Step 6](./06-monitor/README.md) | **Monitor** | ConMon strategy, 12 scan reports, 4 quarterly posture reports | ✅ Active |
 
----
 
 ## Repository Structure
 
-```
 bundle-rmf-project/
 │
 ├── 00-prepare/
@@ -141,9 +136,7 @@ bundle-rmf-project/
     ├── bundle-system-architecture.png  ← Full AWS architecture diagram
     ├── rmf-lifecycle-overview.png      ← 7-step RMF flow diagram
     └── network-topology.png            ← VPC, subnets, and security boundaries
-```
 
----
 
 ## Key Documents — Quick Access
 
@@ -157,7 +150,6 @@ bundle-rmf-project/
 | ATO Letter | Authorization to Operate — BUNDLE-ATO-2025-001 | [ATO](./05-authorize/ato-letter.md) |
 | ConMon Strategy | 15 monitoring activities with thresholds | [ConMon](./06-monitor/continuous-monitoring-strategy.md) |
 
----
 
 ## RMF Roles — Bundle Hospital Network
 
@@ -173,7 +165,6 @@ bundle-rmf-project/
 
 > All names are fictional and used for portfolio simulation purposes only.
 
----
 
 ## Security Highlights
 
@@ -201,7 +192,6 @@ The independent assessment by ClearPath Security LLC identified **6 findings** �
 
 **All 6 original POA&M items closed within 4 months of ATO issuance.**
 
----
 
 ## Frameworks and Standards Used
 
@@ -218,7 +208,6 @@ The independent assessment by ClearPath Security LLC identified **6 findings** �
 | HITECH Act | Strengthened HIPAA enforcement |
 | AWS Shared Responsibility Model | Inherited control boundaries |
 
----
 
 ## Lessons Learned
 
@@ -234,7 +223,6 @@ A few things that are worth knowing if you are reading this as a learning projec
 
 **The RMF is a cycle.** Every major change loops back to earlier steps. Every new finding requires assessment of whether it affects the authorization. The framework is designed to evolve with the system, not be completed once and filed away.
 
----
 
 ## Project Releases
 
@@ -248,7 +236,6 @@ A few things that are worth knowing if you are reading this as a learning projec
 | `v1.0-ATO-issued` | **Step 5 — ATO GRANTED — BUNDLE-ATO-2025-001** |
 | `v1.1-year-one-complete` | Step 6 — Year-One ConMon programme complete, all POA&M closed |
 
----
 
 ## How to Navigate This Project
 
@@ -267,13 +254,11 @@ If you are a **learner** following this project as a study guide:
 - The Word documents in each step contain more detailed explanations and callout boxes
 - Pay particular attention to the SSP thread — it starts in Step 2 and runs through to Step 5
 
----
 
 ## Contact
 
 This project was created as a cybersecurity portfolio piece demonstrating knowledge of the NIST Risk Management Framework in a healthcare context. It is intended to showcase skills in security documentation, risk assessment, control selection, and continuous monitoring programme design.
 
----
 
 *All system names, personnel, and scenarios in this repository are entirely fictional. No real patient data, real organisation data, or real security vulnerabilities are disclosed anywhere in this project. Created for learning and career development purposes.*
 
